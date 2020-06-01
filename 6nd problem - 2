@@ -1,0 +1,21 @@
+for i in range (1,6) : 
+    num = int(input("번호 "))
+    K = int (input("국어 점수 : "))
+    E = int (input("영어 점수 : "))
+    M = int (input("수학 점수 : "))
+    P = int (input("물리 점수 : "))
+
+    sum = K + E + M + P
+    ave = sum / 4
+    if (ave >= 90) : grade = "A"
+    elif (ave >= 80) : grad = "B"
+    elif (ave >= 70) : grade = "C"
+    elif (ave >= 60) : grade = "D"
+    else : grade = "F"
+
+
+    print("=======================================================")
+    print("번호   국어   영어   수학   물리   총점   평균   학점")
+    print("=======================================================")
+    print(num,"    ",K,"   ",E,"   ",M,"   ",P,"  ",sum,"  ",ave,"   ",grade)
+    print("\n")
